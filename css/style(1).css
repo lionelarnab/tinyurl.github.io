@@ -1,0 +1,277 @@
+/*==========================
+     DEFAULT VALUES
+     FONT FAMILY:    Langar
+     GREENISH BLUE:  #34c6d3 (Buttons,icons,links,lines and background)
+     STEEL GRAY:     #41464b (heading)
+     BLUE BAYOX:     #64707b (paragraph)
+     WHITE:          #fff    (text with black background)
+     BLACK:          #000    
+
+
+
+============================*/
+
+
+/* general CSS */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Langar", sans-serif;
+}
+
+p {
+    color: #64707b;
+    font-size: 25px;
+}
+
+h3 {
+    color: blueviolet;
+    text-transform: uppercase;
+}
+
+h4 {
+    color: dodgerblue;
+}
+
+
+/*==========================
+           Home
+============================*/
+
+#home {
+    height: 100%;
+}
+
+#home-cover {
+    height: 100%;
+    background-image: url(../img/background.jpg);
+}
+
+#home-cover-box {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+#home-cover-box-content {
+    display: table-cell;
+    vertical-align: middle;
+    /*text-align: center;*/
+}
+
+#home-heading {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 20px 0 20px 0;
+    text-transform: uppercase;
+}
+
+
+/*==========================
+           PARALLAX(generic)
+============================*/
+
+.bg-parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/*==========================
+           ANIMATE
+============================*/
+
+#home-cover {
+    animation-delay: .5s;
+    animation-duration: .10s;
+}
+
+#home-heading {
+    animation-delay: .20s;
+    animation-duration: .10s;
+}
+
+#home-btn {
+    animation-delay: 1s;
+    animation-duration: 1s;
+}
+
+
+/*==========================
+           BUTTONS(generic)
+============================*/
+
+.btn-general {
+    border-color: #fff;
+    border-width: 2px;
+    border-radius: 0;
+    padding: 12px 26px 12px 26px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btn-white {
+    border-color: aqua;
+    color: #fff;
+}
+
+.btn-white:hover;
+.btn-white:focus {
+    background-color: #fff;
+    color: #41464b;
+}
+
+
+/*==========================
+           CONTENT(generic)
+============================*/
+
+.content-box {
+    padding: 60px 0 1px 0;
+}
+
+.content-title h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.content-title-underline {
+    width: 30px;
+    height: 3px;
+    background-color: #34c6d3;
+    margin: 0 auto 30px auto;
+}
+
+
+/*==========================
+           ABOUT
+============================*/
+
+#about-bg-diagonal {
+    width: 50%;
+    height: 700px;
+    float: right;
+    background-image: url(../img/pexel.jpg)
+}
+
+#about-content-box {
+    float: left;
+    height: 700px;
+}
+
+#about-content-box-outer {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#about-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#about .content-title h3 {
+    text-align: left;
+}
+
+#about .content-underline {
+    margin: 0 0 30px 0;
+}
+
+#about-desc p {
+    margin-bottom: 30px;
+}
+
+
+/*==========================
+           FOOTER
+============================*/
+
+footer {
+    background-color: #41464b;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+footer ul li {
+    display: inline-block;
+    letter-spacing: 10px;
+}
+
+#contact-left p,
+#adress {
+    color: white;
+}
+
+adress {
+    color: white;
+}
+
+#footer-bottom {
+    background-color: rgba(0 0 0 0.1);
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+#footer-copyrights p {
+    margin: 0;
+    color: #fff;
+}
+
+
+/*==========================
+           NAVIGATION
+============================*/
+
+.navbar-brand img {
+    float: left;
+    width: 35%;
+}
+
+.navbar {
+    padding: 20px 0;
+}
+
+.navbar-inverse {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 7px 0;
+}
+
+.project-nav-wrapper {
+    padding: 0 85px;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.navbar-nav > li > a {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+    background: none;
+    color: #34c6d3;
+}
+
+.navbar-inverse ul.navbar-nav > li.active > a {
+    color: aqua;
+}
